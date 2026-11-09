@@ -212,6 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderRandomQuote() {
     let nextIndex;
+    // Avoid showing the same affirmation twice in a row.
     do {
       nextIndex = Math.floor(Math.random() * quotesCollection.length);
     } while (nextIndex === currentQuoteIndex && quotesCollection.length > 1);

@@ -1255,6 +1255,8 @@ ul {
   animation: heartBeat 0.5s ease-in-out;
 }
 
+.btn-like-pin.liked .fa-heart::before { content: '♥'; }
+
 .gallery-overlay-bottom {
   display: flex;
   align-items: flex-end;
@@ -2392,6 +2394,11 @@ textarea.form-control {
 @media (max-width: 900px) {
   .header {
     padding: 0.9rem 0;
+  }
+
+  /* Keep the compact header focused on the brand and menu control. */
+  .btn-pill-cta {
+    display: none;
   }
 
   .hamburger-btn {
